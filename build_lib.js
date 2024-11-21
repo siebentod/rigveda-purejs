@@ -2,10 +2,8 @@ import fs from 'fs/promises'; // Используем асинхронные ф�
 import path from 'path';
 
 export async function copyFolder(src, dest) {
-  // Создаем папку назначения
   await fs.mkdir(dest, { recursive: true });
 
-  // Читаем содержимое папки
   const entries = await fs.readdir(src, { withFileTypes: true });
 
   for (const entry of entries) {

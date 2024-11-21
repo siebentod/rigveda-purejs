@@ -8,17 +8,14 @@ const publicDir = path.resolve('./app/public');
 const dataDir = path.resolve('./app/public/data/json');
 
 async function recreatePublicFolder() {
-  // Удаляем папку public
   await fs.rm(publicDir, { recursive: true, force: true });
 
-  // Копируем все содержимое ./app в ./app/public
   const entries = await fs.readdir(appDir, { withFileTypes: true });
 
   for (const entry of entries) {
     const srcPath = path.join(appDir, entry.name);
     const destPath = path.join(publicDir, entry.name);
 
-    // Пропускаем папку public
     if (entry.name === 'public') continue;
 
     if (entry.isDirectory()) {
@@ -38,11 +35,9 @@ try {
   for (const file of files) {
     const filePath = path.join(dataDir, file);
 
-    // Чтение файла асинхронно
     const data = await fs.readFile(filePath, 'utf8');
     const item = JSON.parse(data);
 
-    // Запись файла асинхронно
     if (item.id !== 'about') {
       await fs.writeFile(
         path.join(publicDir, `${item.id}.html`),
@@ -52,7 +47,7 @@ try {
     } else {
       await fs.writeFile(
         path.join(publicDir, `${item.id}.html`),
-        aboutHTML, // function with html text
+        aboutHTML, // /about html
         'utf8'
       );
     }
