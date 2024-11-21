@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
-import { copyFolder } from './build+lib.js';
-import { itemHTMLTemplate, aboutHTML } from './build+item-html-template.js';
+import { copyFolder } from './build_lib.js';
+import { itemHTMLTemplate, aboutHTML } from './build_item-html-template.js';
 
 const appDir = path.resolve('./app');
 const publicDir = path.resolve('./app/public');
