@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://rigveda-hymns.vercel.app
+
+# Sitemaps
+Sitemap: https://rigveda-hymns.vercel.app/sitemap.xml
