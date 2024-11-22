@@ -1,4 +1,4 @@
-import fs from 'fs/promises'; // Используем асинхронные функции для работы с файлами
+import fs from 'fs/promises';
 import path from 'path';
 
 export async function copyFolder(src, dest) {
