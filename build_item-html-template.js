@@ -7,6 +7,7 @@ export function itemHTMLTemplate(item) {
     <title>${item.title}${item.id !== 'index' ? ` | Ригведа` : ''}</title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
+    <meta name="google-site-verification" content="yW0UNzfYP4wvVQU3xSXJO6QesaQccZ8FrrLVKo7xvtg" />
     <script type="module" src="/main.js" defer></script>
   </head>
   <body>
