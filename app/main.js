@@ -50,6 +50,15 @@ function setupGlobalEventListeners() {
   checkbox.addEventListener('change', handleCheckbox);
 
   openRandom.addEventListener('click', handleRandom);
+
+  window.addEventListener('popstate', () => {
+    const currentPath = window.location.pathname;
+    const contentId =
+      currentPath === '/' || currentPath === '/index.html'
+        ? 'index'
+        : currentPath.slice(1);
+    loadContent(contentId);
+  });
 }
 
 // === Обработчики событий ===

@@ -1,13 +1,13 @@
 :root {
-  --card: hsl(225, 64%, 28%);
+  --card: hsl(120, 100%, 21%);
   --card-text: white;
-  --card-hover: hsl(225, 55%, 33%);
-  --card-border: hsl(225, 25%, 35%);
+  --card-hover: hsl(120, 60%, 30%);
+  --card-border: hsl(120, 40%, 35%);
 
-  --button: hsl(225, 60%, 35%);
-  --button-text: white;
-  --button-hover: hsl(225, 50%, 40%);
-  --results-text: hsl(225, 65%, 28%);
+  --button: hsl(133, 95%, 83%);
+  --button-text: hsl(154, 100%, 12%);
+  --button-hover: hsl(133, 60%, 60%);
+  --results-text: hsl(120, 65%, 28%);
 
   --placeholder-gray: #787878;
   --light-placeholder-gray: #9196a1;
@@ -154,7 +154,7 @@ main {
 }
 .icons * {
   cursor: pointer;
-  color: var(--button);
+  color: var(--card);
 }
 .about__icons {
   position: fixed;
@@ -164,7 +164,7 @@ main {
   gap: 3px;
 }
 .about__icons * {
-  color: var(--button);
+  color: var(--card);
 }
 .filter {
   margin-top: 2px;
@@ -206,7 +206,8 @@ main {
   padding: 0 1rem;
   cursor: pointer;
   transition: border-color 0.25s;
-  color: #fff;
+  color: var(--button-text);
+  font-weight: 600;
   margin: 3px 0 1px;
   grid-column: 2;
   background-color: var(--button);
