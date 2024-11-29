@@ -111,6 +111,7 @@ function toggleHeaderVisibility() {
 function handleRandom() {
   const random = shownCards[Math.floor(Math.random() * shownCards.length)];
   loadContent(random.id);
+  history.pushState(null, '', random.id);
 }
 
 function handleClearSearch() {
