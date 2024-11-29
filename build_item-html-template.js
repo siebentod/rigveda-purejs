@@ -80,7 +80,7 @@ export function itemHTMLTemplate(item) {
           <div class="inputPlusRandom">
             <div class="inputPlusCheckbox scalable">
               <div class="search-wrapper">
-                <input type="search" id="search-input" placeholder="Поиск по тексту" value="" />
+                <input type="search" id="search-input" placeholder="Поиск по текстам" value="" />
                 <button class="clear-select">&times;</button>
               </div>
               <input type="checkbox" id="checkbox" title="Строгий (не допускается поиск посреди слова)" />
