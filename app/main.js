@@ -28,15 +28,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Инициализация страницы
 function initializePage() {
+  if (window.innerWidth < 650) {
+    cardsContainer.classList.toggle('cardsHidden');
+  }
   const currentPath = window.location.pathname;
   const initialContent =
     currentPath === '/' || currentPath === '/index.html'
       ? 'index'
       : currentPath;
   loadContent(initialContent);
-  if (window.innerWidth < 650) {
-    cardsContainer.classList.toggle('cardsHidden');
-  }
 }
 
 // Настройка глобальных обработчиков событий
