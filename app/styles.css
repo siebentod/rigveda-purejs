@@ -304,7 +304,7 @@ main {
     display: none;
   }
   .openRandom {
-    margin-left: 5px !important;
+    margin-left: 8px !important;
   }
   input[type='checkbox'] {
     display: none;
@@ -328,6 +328,7 @@ main {
   .arrow-up {
     font-size: 14px;
     padding: 5px;
+    display: none !important;
   }
   #button-hide-cards {
     font-size: 14px;
