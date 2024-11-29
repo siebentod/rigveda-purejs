@@ -73,6 +73,11 @@ function handleLinksClick(event) {
     const href = link.getAttribute('href');
     history.pushState(null, '', href);
     loadContent(href === '/' ? 'index' : href.slice(1));
+    if (window.innerWidth < 650) {
+      if (!cardsContainer.classList.contains('cardsHidden')) {
+        cardsContainer.classList.add('cardsHidden');
+      }
+    }
   }
 }
 
