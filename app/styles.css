@@ -244,6 +244,7 @@ main {
   user-select: none;
   color: #787878;
   font: inherit;
+  font-size: 0.813rem !important;
 }
 .filter
   .inputPlusRandom
@@ -252,6 +253,7 @@ main {
   color: #787878;
   font: inherit;
   opacity: 1;
+  font-size: 0.813rem !important;
 }
 .filter .inputPlusRandom .inputPlusCheckbox .search-wrapper {
   position: relative;
@@ -280,7 +282,7 @@ main {
   display: none;
   font-weight: 300;
   grid-column: 1;
-  color: --results-text;
+  color: var(--results-text);
   font-size: 0.875rem !important;
   /* 0.8rem */
 }
