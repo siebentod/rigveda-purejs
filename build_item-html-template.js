@@ -5,6 +5,10 @@ export function itemHTMLTemplate(item) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>${item.title}${item.id !== 'index' ? ` | Ригведа` : ''}</title>
+    <meta
+      name="description"
+      content="Все гимны Ригведы с возможностью поиска"
+    />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
     <meta name="google-site-verification" content="yW0UNzfYP4wvVQU3xSXJO6QesaQccZ8FrrLVKo7xvtg" />
