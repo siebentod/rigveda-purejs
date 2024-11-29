@@ -201,7 +201,7 @@ main {
   grid-auto-flow: row;
 }
 .filter .inputPlusRandom .openRandom {
-  font-size: 0.875rem;
+  font-size: 15px;
   height: 27px;
   padding: 0 1rem;
   cursor: pointer;
@@ -244,7 +244,7 @@ main {
   border-radius: 4px;
   text-align: center;
   font-size: 0.875rem;
-  padding: 3px 0;
+  padding: 2px 0;
   color: #000;
 }
 .filter .inputPlusRandom .inputPlusCheckbox input[type='search']:focus {
@@ -311,8 +311,8 @@ main {
   }
 }
 #button-hide-cards {
-  font-size: 12px;
-  padding: 4px;
+  font-size: 14px;
+  padding: 5px;
   align-self: center;
   height: max-content;
   width: max-content;
@@ -337,8 +337,8 @@ main {
   top: 6px;
 }
 .arrow-up {
-  font-size: 12px;
-  padding: 4px;
+  font-size: 14px;
+  padding: 5px;
   align-self: center;
   height: max-content;
   width: max-content;
