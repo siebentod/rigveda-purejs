@@ -21,6 +21,17 @@
   --footer-hover: #c2c9d6;
 }
 
+br {
+  margin: 0 0;
+  content: '';
+  display: block;
+}
+
+.blankline {
+  display: block;
+  margin-bottom: 6px;
+}
+
 a {
   font-weight: 500;
   color: #fff;
