@@ -5,6 +5,7 @@ const root = document.getElementById('root');
 const prajapati = document.querySelector('.prajapati');
 const cardsContainer = document.querySelector('.cards');
 const cards = document.querySelectorAll('.card');
+const scrollableContent = document.querySelector('.modal-content');
 
 const buttonHideHeader = document.getElementById('button-hide-header');
 const buttonHideCards = document.getElementById('button-hide-cards');
@@ -165,8 +166,8 @@ function looseIncludes(searchPhrase, targetObject, strict = false) {
     : sum.toLowerCase().includes(searchPhrase.toLowerCase());
 }
 
-function loadContent(itemId) {
-  fetch(`/data/json/${itemId}.json`)
+async function loadContent(itemId) {
+  await fetch(`/data/json/${itemId}.json`)
     .then((response) => response.json())
     .then((item) => {
       const isIndex = item.id === 'index';
@@ -177,4 +178,5 @@ function loadContent(itemId) {
       document.title = isIndex ? item.title : `${item.title} | Ригведа`;
     })
     .catch((error) => console.error('Error loading JSON:', error));
+  scrollableContent.scrollTop = 0;
 }
