@@ -16,7 +16,7 @@ export function itemHTMLTemplate(item) {
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="styles.css" />
     <meta name="google-site-verification" content="yW0UNzfYP4wvVQU3xSXJO6QesaQccZ8FrrLVKo7xvtg" />
-    <meta name="yandex-verification" content="1ec0b8a6818fdb40" />
+    <meta name="yandex-verification" content="0d39b87e462359b4" />
     <script type="module" src="/main.js" defer></script>
   </head>
   <body>
